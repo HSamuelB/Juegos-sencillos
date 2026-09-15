@@ -3,7 +3,6 @@ body{
 }
 
 .juego {
-  background: #ffffff;
   border: 1px solid #e3e5ee;
   border-radius: 12px;
   padding: 24px;
@@ -20,6 +19,7 @@ body{
   border-radius: 8px;
   font-size: 0.95rem;
   margin-right: 8px;
+  min-width: 90px;
 }
 
 .juego button {

@@ -20,11 +20,14 @@ btnAdivinar.addEventListener("click", function () {
 
   if (numeroUsuario === numeroSecreto) {
     mensaje.textContent = "Correcto. El número era " + numeroSecreto + ". Lo lograste en " + intentos + " intentos.";
+    mensaje.style.color="green"
     btnAdivinar.disabled = true;
   } else if (numeroUsuario > numeroSecreto) {
     mensaje.textContent = "Muy alto. Intenta con un número menor.";
+    mensaje.style.color="orange"
   } else {
     mensaje.textContent = "Muy bajo. Intenta con un número mayor.";
+    mensaje.style.color="orange"
   }
 
   input.value = "";
